@@ -13,7 +13,7 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo cd /etc/yum.repos.d/
 sudo curl -O https://pkg.jenkins.io/redhat-stable/jenkins.repo
 # 3. Install Jenkins
-sudo yum -y install jenkins
+sudo yum -y install jenkins  --nobest
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
